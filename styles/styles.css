@@ -1,4 +1,6 @@
 body {
+  margin: 0;
+  padding: 0;
   background-color: rgb(46, 41, 41);
   color: rgb(240, 248, 255);
   font-family: "Fira Sans", sans-serif;
@@ -41,10 +43,13 @@ nav ul li a:hover {
 
 #about {
   width: 960px;
-  margin: 0 auto;
+  margin: 80px auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+#about .half-width {
+  width: 50%;
 }
 #about h1 {
   font-family: "Oswald", sans-serif;
@@ -52,12 +57,13 @@ nav ul li a:hover {
   font-size: 36px;
 }
 #about p {
-  font-size: 18px;
+  font-size: 16px;
 }
 #about img {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   border-radius: 100%;
+  margin-left: 140px;
 }
 #about ul {
   margin-top: 25px;
@@ -103,15 +109,264 @@ nav ul li a:hover {
   margin: 0 auto;
 }
 .skill-items {
-  width: 30%;
+  width: 27%;
   text-align: center;
   display: inline-block;
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
-  border-radius: 3px;
+  border-radius: 15px;
   margin-right: 20px;
-  padding: 20px 0;
+  padding: 20px 15px;
+  background-color: rgb(54, 47, 47);
 }
 .fa-award {
   color: rgb(250, 201, 39);
   font-size: 40px;
+}
+#about-us {
+  width: 960px;
+  margin: 80px auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+#about-us img {
+  width: 50%;
+}
+#about-us h2 {
+  text-align: left;
+  margin-top: -35px;
+  margin-left: 20px;
+}
+#about-us h2 span {
+  border-bottom: 3px solid rgb(250, 201, 39);
+}
+#about-us p {
+  width: 80%;
+  margin-left: 40px;
+  text-align: left;
+}
+#about-us p:first-of-type {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+button {
+  font-size: 16px;
+  margin-left: 40px;
+  color: rgb(250, 201, 39);
+  background-color: transparent;
+  border: 3px solid rgb(250, 201, 39);
+  border-radius: 15px;
+  padding: 5px 15px;
+}
+button:hover {
+  color: rgb(240, 248, 255);
+  background-color: rgb(250, 201, 39);
+}
+#our-services {
+  width: 960px;
+  margin: 80px auto;
+}
+#our-services h2 span {
+  border-bottom: 3px solid rgb(250, 201, 39);
+}
+#our-services p {
+  text-align: center;
+}
+#our-services p:first-of-type {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+#our-services p:last-of-type {
+  width: 80%;
+  margin: 0 auto;
+  text-align: justify;
+}
+#our-services .services-items {
+  width: 27%;
+  text-align: center;
+  display: inline-block;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 15px;
+  margin: 30px 20px 20px 0;
+  padding: 20px 15px;
+  background-color: rgb(54, 47, 47);
+}
+#our-services .services-items p {
+  font-size: 16px;
+  text-align: center;
+  text-transform: none;
+}
+#portfolio {
+  width: 960px;
+  margin: 0px auto;
+}
+
+#portfolio img {
+  width: 30%;
+  margin: 0 21px 40px 0;
+}
+
+#case-studies {
+  width: 960px;
+  margin: 80px auto;
+  text-align: center;
+}
+#case-studies h2 span {
+  border-bottom: 3px solid rgb(250, 201, 39);
+}
+
+#case-studies p:first-of-type {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+#case-studies p:last-of-type {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+#case-studies button {
+  margin-top: 20px;
+}
+.case-items {
+  display: flex;
+}
+.case-item img {
+  width: 75%;
+}
+#case-studies .case-item p {
+  font-size: 15px;
+  text-transform: none;
+}
+#happy-clients {
+  background-color: rgb(19, 11, 73);
+  padding-bottom: 20px;
+}
+#happy-clients h2 span {
+  border-bottom: 3px solid rgb(250, 201, 39);
+}
+#slider_area {
+  margin-top: 20px;
+  text-align: center;
+  overflow: hidden;
+}
+.item {
+  position: relative;
+  background-color: rgb(19, 11, 73);
+  text-align: center;
+  padding: 10px;
+}
+.item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  margin: 0 auto;
+}
+#contact-us {
+  text-align: center;
+  font-size: 16px;
+}
+#contact-us h2 span {
+  border-bottom: 3px solid rgb(250, 201, 39);
+}
+#contact-us input[type="text"] {
+  background-color: transparent;
+  border: 3px solid rgb(250, 201, 39);
+  border-radius: 10px;
+  padding: 10px 5%;
+  margin-bottom: 10px;
+  width: 19.5%;
+}
+#contact-us input[type="email"] {
+  background-color: transparent;
+  border: 3px solid rgb(250, 201, 39);
+  border-radius: 10px;
+  padding: 10px 5%;
+  margin-bottom: 10px;
+  width: 50%;
+}
+#contact-us textarea {
+  background-color: transparent;
+  border: 3px solid rgb(250, 201, 39);
+  border-radius: 10px;
+  padding: 10px 5%;
+  margin-bottom: 10px;
+  width: 50%;
+}
+#contact-us input[type="submit"] {
+  background-color: transparent;
+  color: rgb(240, 248, 255);
+  border: 3px solid rgb(250, 201, 39);
+  border-radius: 10px;
+  padding: 10px 5%;
+  font-size: 16px;
+  width: 15%;
+  cursor: pointer;
+}
+#contact-us input[type="submit"]:hover {
+  background: rgb(250, 201, 39);
+  color: rgb(240, 248, 255);
+}
+#trusted-clients {
+  background-color: rgb(19, 11, 73);
+}
+#trusted-clients h2 span {
+  border-bottom: 3px solid rgb(250, 201, 39);
+}
+
+#trusted-clients p {
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+}
+#trusted-clients ul {
+  text-align: center;
+  list-style: none;
+}
+#trusted-clients ul li {
+  display: inline-block;
+  margin-right: 80px;
+}
+#trusted-clients ul li img {
+  width: 150%;
+}
+#footer-section {
+  width: 960px;
+  margin: 80px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#footer-section h3 span {
+  border-bottom: 3px solid rgb(250, 201, 39);
+}
+.footer-info {
+  width: 25%;
+}
+.footer-info a {
+  text-decoration: none;
+  color: rgb(240, 248, 255);
+}
+.fab {
+  font-size: 20px;
+  padding: 10px;
+}
+.footer-info h3 {
+  font-size: 24px;
+  color: rgb(250, 201, 39);
+}
+#footer-section ul {
+  list-style: none;
+  margin: -10px 0 0 -38px;
+}
+#footer-section ul li {
+  font-size: 16px;
+}
+#footer-section ul li a {
+  color: rgb(240, 248, 255);
+  text-decoration: none;
+}
+#footer-section ul li a:hover {
+  text-decoration: none;
+  color: rgb(250, 201, 39);
 }
